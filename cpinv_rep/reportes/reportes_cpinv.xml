@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <report
+            id="cpinv_report"
+            string="Reporte de Inventarios"
+            model="cp.inventario"
+            report_type="qweb-pdf"
+            file="cpinv_rep.cp_inv"
+            name="cpinv_rep.cp_inv"
+            menu="True"
+        />
+    </data>
+</openerp>
