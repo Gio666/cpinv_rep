@@ -10,7 +10,7 @@ class reportes_cp(report_sxw.rml_parse):
 
 class reportes_cp_inv(osv.AbstractModel):
     _name="report.cpinv_rep.cp_inv"
-    _inherit="report.abstract.report"
+    _inherit="report.abstract_report"
     _template="cpinv_rep.cp_inv"
     _wrapped_report_class=reportes_cp
 
