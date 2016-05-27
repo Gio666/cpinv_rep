@@ -28,9 +28,7 @@
     "website" : "http://www.attakatara.wordpress.com",
     "description" : "agrega la posibilidad de generar reportes a cpsis",
     "author" : "jorgescalona @jorgemustaine",
-    "depends" : ['base','base_setup','cpinv_base'],
-    "data" : [
-        'views/template_reporte_cpinv.xml',
-        'reportes/reportes_cpinv.xml'],
-     "installable": True,
+    "depends" : ['cpinv_base','report_webkit'],
+    "data" : ['views/template_reporte_cpinv.xml','reportes/reportes_cpinv.xml'],
+    "installable": True,
 }
