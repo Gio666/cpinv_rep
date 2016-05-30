@@ -1,0 +1,13 @@
+### Instalación del módulo de pruebas cpinv
+
+El caso hipotetico es un control de inventarios que tiene como base el módulo cpinv_base
+el mismo se hereda en cpinv_rep que a su vez depende de report_webkit para la creación de
+reportes basados en html + css.
+
+DEPENDENCIAS:
+
+Antes de instalar el modulo es necesario instalar la libreria wkhtmltopdf en su version 0.12.0
+ya que las versiones superiores a 0.12.1 causan un conflicto con Odoo descrito como el isuue #4806
+https://github.com/odoo/odoo/issues/5177
+
+

@@ -26,7 +26,9 @@
     "name" : "cpinv_rep",
     "version" : "0.1.0",
     "website" : "http://www.attakatara.wordpress.com",
-    "description" : "agrega la posibilidad de generar reportes a cpsis",
+    "description" : "agrega la posibilidad de generar reportes a cpsis, se debe instalar la \
+                    libreria wkhtmltopdf en su version 0.12.0 para el funcionamiento correcto \
+                    del motor de informes",
     "author" : "jorgescalona @jorgemustaine",
     "depends" : ['cpinv_base','report_webkit'],
     "data" : ['views/template_reporte_cpinv.xml','reportes/reportes_cpinv.xml'],
