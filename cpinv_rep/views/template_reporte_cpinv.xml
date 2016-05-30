@@ -6,7 +6,25 @@
                 <t t-foreach="docs" t-as="o">
                     <t t-call="report.external_layout">
                         <div class="page">
-                            <h1>Hola Mundo Reportes </h1>
+                            <h1>Reporte de Inventarios</h1>
+                            <table class="table table-striped"> <!-- crea una tabla con clase de bootstrap -->
+                                <thread>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Marca</th>
+                                        <th>Descripción</th>
+                                        <th>Ubicación</th>
+                                    </tr>
+                                </thread>
+                                <tbody>
+                                     <tr>
+                                        <td><t t-esc="o.codigo"></t></td>
+                                        <td><t t-esc="o.marca_id"></t></td>
+                                        <td><t t-esc="o.descripcion"></t></td>
+                                        <td><t t-esc="o.ubicacion"></t></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </t>
                 </t>
