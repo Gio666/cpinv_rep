@@ -19,7 +19,7 @@
                                 <tbody>
                                      <tr>
                                         <td><t t-esc="o.codigo"></t></td>
-                                        <td><t t-esc="o.marca_id"></t></td>
+                                        <td><t t-esc="o.marca_id.marca"></t></td>
                                         <td><t t-esc="o.descripcion"></t></td>
                                         <td><t t-esc="o.ubicacion"></t></td>
                                     </tr>
