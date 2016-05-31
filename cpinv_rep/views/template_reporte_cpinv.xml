@@ -6,23 +6,46 @@
                 <t t-foreach="docs" t-as="o">
                     <t t-call="report.external_layout">
                         <div class="page">
-                            <h1>Reporte de Inventarios</h1>
+                            <h2><t t-esc="o.codigo"></t><t t-esc="o.marca_id.marca"></t></h2>
                             <table class="table table-striped"> <!-- crea una tabla con clase de bootstrap -->
-                                <thread>
-                                    <tr>
-                                        <th>Código</th>
-                                        <th>Marca</th>
-                                        <th>Descripción</th>
-                                        <th>Ubicación</th>
-                                    </tr>
-                                </thread>
                                 <tbody>
-                                     <tr>
-                                        <td><t t-esc="o.codigo"></t></td>
-                                        <td><t t-esc="o.marca_id.marca"></t></td>
+                                    <tr>
+                                        <td><d>Descripción: </d></td>
                                         <td><t t-esc="o.descripcion"></t></td>
+                                    </tr>
+                                    <tr>    
+                                        <td><d>Ubicación: </d></td>
                                         <td><t t-esc="o.ubicacion"></t></td>
                                     </tr>
+                                    <tr>    
+                                        <td><d>S/N : </d></td>
+                                        <td><t t-esc="o.serial"></t></td>
+                                    </tr>
+                                    <tr>    
+                                        <td><d>P/N : </d></td>
+                                        <td><t t-esc="o.parte"></t></td>
+                                    </tr>
+                                    <tr>    
+                                        <td><d>Proveedor : </d></td>
+                                        <td><t t-esc="o.proveedor_id.proveedor"></t></td>
+                                    </tr>
+                                    <tr>    
+                                        <td><d>Dirección Proveedor : </d></td>
+                                        <td><t t-esc="o.proveedor_id.direccion"></t></td>
+                                    </tr>
+                                    <tr>    
+                                        <td><d>Estado Proveedor : </d></td>
+                                        <td><t t-esc="o.proveedor_id.estado_id.estado"></t></td>
+                                    </tr>
+                                    <tr>    
+                                        <td><d>Contacto Proveedor : </d></td>
+                                        <td><t t-esc="o.proveedor_id.contacto"></t></td>
+                                    </tr>
+                                    <tr>    
+                                        <td><d>telefono Proveedor : </d></td>
+                                        <td><t t-esc="o.proveedor_id.tel_fijo"></t></td>
+                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>
